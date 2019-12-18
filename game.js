@@ -636,8 +636,15 @@ function keyPressed() {
 
 		} else if (screen == "finale") {
 
+			screen = "resolution"
+			i = 0
 
 
+		} else if (screen == "resolution") {
+
+			screen = "intro"
+			i = 0
+			
 		}
 
 			
