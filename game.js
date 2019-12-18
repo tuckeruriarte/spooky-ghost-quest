@@ -1,13 +1,16 @@
 let myFont
+
 let screen = "menu"
+
 let start = true
 let foyer = false
-let woods = 0
 let attemptLeave = false
-let staircase = 0
 let idol = false
 let portrait = false
 let passage = false
+
+let woods = 0
+let staircase = 0
 let spooky = 0
 
 let wordsnow = ""
@@ -18,11 +21,6 @@ let wordsy2
 let i = 0
 
 let usertext = ""
-
-
-
-
-
 
 
 
@@ -37,8 +35,6 @@ function setup() {
 	canvas.parent("p5")
 	//frameRate(16)
 }
-
-
 
 
 
@@ -608,7 +604,7 @@ function keyPressed() {
 		} else if (scree == "passage3") {
 			screen = "gallery3"
 			i = 0
-		}
+		
 		
 
 
