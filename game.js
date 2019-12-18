@@ -33,7 +33,7 @@ function preload() {
 function setup() {
 	let canvas = createCanvas(800, 600)
 	canvas.parent("p5")
-	//frameRate(16)
+	frameRate(16)
 }
 
 
@@ -644,7 +644,7 @@ function keyPressed() {
 
 			screen = "intro"
 			i = 0
-			
+
 		}
 
 			
