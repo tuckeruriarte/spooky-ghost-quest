@@ -1,0 +1,408 @@
+0 HOME
+4 INVERSE
+5 PRINT "SPOOKY GHOST QUEST!!!"
+6 NORMAL
+10 PRINT ""
+
+20 REM BASE SETTINGS
+20 WOODS = 0
+22 ALTAR = 0
+24 KEY = 0
+26 PASSAGE = 0
+28 KHEYHOLE = 0
+
+
+40 PRINT "You pull up in front of a large manor   with shuttered windows and turn off     your engine."
+50 PRINT "The sign on the entrance says 
+51 PRINT ""
+52 PRINT "BEWARE OF GHOSTS"  
+53 PRINT ""
+55 PRINT "But you're a ghost hunter, so you don't care that much."
+60 PRINT "The ghosts are why you're here."
+70 PRINT "You get out of your car, and close the  door."
+75 PRINT ""
+80 PRINT "You have nothing but your wits."
+81 PRINT "That's all you need to hunt ghosts      anyway."
+
+83 REM IN FRONT OF HOUSE
+83 PRINT ""
+84 PRINT "You are surrounded by dense WOODS,      except for the HOUSE in front of you    and the ROAD behind.  What do you do?
+
+
+90 INPUT A$
+100 IF RIGHT$(A$, 5) = "HOUSE" GOTO 200
+110 IF RIGHT$(A$, 4) = "ROAD" GOTO 300
+115 IF RIGHT$(A$, 5) = "WOODS" GOTO 400
+
+120 HOME
+130 PRINT "You toy briefly with that idea, and     then remember you're playing a pretty   simple adventure game and decide to do  something else.
+140 GOTO 83
+
+200 HOME
+210 REM APPROACHING THE HOUSE
+210 PRINT "You walk towards the house, dead leaves crunching under foot.  
+214 PRINT ""
+215 PRINT "You step up the front steps and cross   the dusty porch, reaching out to to     touch the old brass doorknob."
+220 PRINT "It is cold under your hand as you turn  it and push the old door open.
+222 PRINT "A shiver goes up your spine as you      become aware of the creeping presence   of the undead."
+223 FOYER = 0
+224 PRINT "
+
+
+
+
+
+
+
+230 REM FOYER
+230 IF FOYER = 1 THEN HOME
+235 PRINT "You are in a dimly lit FOYER.  You see  broken furniture and cobwebs.  There is a STAIRCASE leading up to a darkened    second floor.  There is a door to the   WEST and also one to the NORTH.
+236 FOYER = 1
+240 PRINT "
+
+245 INPUT B$
+250 IF RIGHT$(B$, 9) = "STAIRCASE" OR RIGHT$(B$, 6) = "STAIRS" OR RIGHT$(B$, 2) = "UP" GOTO 880
+255 IF RIGHT$(B$, 5) = "NORTH" OR RIGHT$(B$, 10) = "NORTH DOOR" GOTO 502 
+260 IF RIGHT$(B$, 4) = "WEST" OR RIGHT$(B$, 9) = "WEST DOOR" GOTO 835
+270 IF RIGHT$(B$, 4) = "BACK" OR RIGHT$(B$, 7) = "OUTSIDE" GOTO 275
+272 GOTO 285
+275 HOME
+280 GOTO 84
+285 HOME
+290 PRINT "You toy briefly with that idea, and     then remember you're playing a pretty   simple adventure game and decide to do  something else.
+295 GOTO 230
+
+
+
+
+
+
+
+300 REM TAKE ROAD
+300 HOME
+305 PRINT "Probably there aren't ghosts here, you  decide, looking around nervously.  
+310 PRINT "You get back in your car and lock the   doors.  
+315 PRINT "You drive quickly back into town,       carefully putting the spooky mansion    out of your mind, thinking of what to   have for dinner instead."
+320 PRINT ""
+335 PRINT "You suddenly find yourself back in      front of the dark manor.  It's dark     windows stare at you like the eye       sockets of a skull."
+340 PRINT "It seems you won't be able to leave so  easily...
+345 GOTO 83
+
+
+
+
+
+
+
+
+400 REM LOOK IN WOODS
+400 HOME
+405 WOODS=WOODS+1
+406 IF WOODS = 2 GOTO 460
+407 IF WOODS = 3 GOTO 470
+410 PRINT "The woods are dense, and you spend      several minutes trying to find a path   through the trees. 
+411 PRINT ""
+412 PRINT "You start seeing gentle lights floating just out of the corner of your eye... 
+413 PRINT "You think you hear music.... 
+415 PRINT "You feel a strange compulsion to        explore deeper...
+416 PRINT ""
+420 PRINT "You suddenly become afraid of getting   lost and return quickly to the small    clearing in front of the manor.
+430 PRINT ""
+440 PRINT "Not that the manor feels any safer...   You glance back at the woods and        consider trying again.
+441 PRINT "What was that music...?"
+450 GOTO 83
+
+
+460 REM WOODS 2, ELECTRIC BUGALO
+460 PRINT "Once again, the deeper into the woods   you get the louder the almost-music     seems to get.
+461 PRINT "
+462 PRINT "The lights drifting in the corners of   your eyes flare and get brighter... you feel that someone is about to whisper   something important to you.... 
+463 PRINT ""
+464 PRINT "Suddenly horror grips you again, and    you crash through the brush until you   see your car and the path up to the     manor... safe...
+465 PRINT ""
+466 PRINT "Your terror quickly fades from your     mind though, and you glance back        longingly at the woods...
+467 PRINT ""
+468 PRINT "Maybe one more try wouldn't hurt....."
+469 GOTO 83
+
+
+470 REM WOODS 3, GET WRECKED BY SPRITES
+470 PRINT "You pass once more through the trees,   straining your ears to hear the         otherworldy music sliding its tongue    across your mind.
+471 PRINT "
+475 PRINT "You walk deeper, speeding up, trying to hear more of that seductive melody.
+476 PRINT "
+480 PRINT "You feel a gentle caress accross your   shoulder and a hand rest on your back.
+485 PRINT "A breath sounds in your ear, and you    feel again the sensation that you are   about to hear a great secret...
+486 PRINT "
+490 PRINT "Your foot meets nothing.  You find      yourself falling into a ravine.  You    try to balance, but the tender hand on  your back becomes a forceful one, and   you are tossed out into the void.
+491 PRINT ""
+493 PRINT "You fall for a long, long time.....
+496 PRINT ""
+497 INVERSE
+498 PRINT "THE END";
+499 NORMAL
+500 END
+
+
+
+
+
+
+
+
+
+502 REM NORTH ROOM: ART GALLERY
+502 HOME
+505 PRINT "You are in a long rectangular room.     Aged PORTRAITS line the walls";
+506 IF KHEYHOLE = 0 THEN PRINT ", and you  get the unsettling impression that      they are watching you." 
+507 IF KHEYHOLE = 1 THEN PRINT ".  One     PORTRAIT in particular seems like it    was moved frequently in the past"
+508 IF KHEYHOLE = 2 THEN PRINT ".  One is  removed from its place, and there is a  KEYHOLE in the wall where it once       rested."
+509 PRINT "
+510 IF PASSAGE = 0 THEN PRINT "The west wall is completely filled with a large MURAL depicting a monster       rising from a pit of fire.  It's many   eyes seem to flicker.  Must be a trick  of the light.
+511 IF PASSAGE = 1 THEN PRINT "The mural that used to fill the west    wall is gone, revealing a rough-hewn    PASSAGE, leading into a dark room.
+512 PRINT ""
+513 PRINT "There is a TABLE in the center of the   room cluttered with faded papers and    small trinkets.
+514 PRINT ""
+
+515 INPUT C$
+520 IF RIGHT$(C$, 9) = "PORTRAITS" GOTO 560
+522 IF RIGHT$(C$, 8) = "PORTRAIT" GOTO 585
+525 IF RIGHT$(C$, 5) = "MURAL" GOTO 690
+530 IF RIGHT$(C$, 5) = "TABLE" GOTO 615
+535 IF RIGHT$(C$, 4) = "BACK" OR RIGHT$(C$, 5) = "FOYER" OR RIGHT$(C$, 5) = "SOUTH" GOTO 230
+540 IF RIGHT$(C$, 7) = "KEYHOLE" GOTO 650
+545 IF RIGHT$(C$, 7) = "PASSAGE" GOTO 730
+549 HOME
+550 PRINT "You toy briefly with that idea, and     then remember you're playing a pretty   simple adventure game and decide to do  something else.
+551 PRINT "
+552 PRINT "Press SPACE to continue.";
+553 GET ZZ$
+555 GOTO 502
+
+560 REM PORTRAITS
+560 HOME
+565 PRINT "The portraits all show dismal-looking   aristocrats glaring down from dark      velvet backdrops.  
+566 PRINT "
+570 IF KHEYHOLE < 1 THEN PRINT "You notice one of a young man is        hanging slightly crooked, and upon      closer inspection you find scuff marks  on the wall nearby.  It seems this      PORTRAIT was moved frequently in the    past... 
+575 IF KHEYHOLE < 1 THEN PRINT "
+576 PRINT "Press SPACE to continue.";
+578 GET ZZ$
+579 KHEYHOLE = 1
+580 GOTO 502
+
+585 REM MOVE PORTRAIT
+585 HOME
+586 IF KHEYHOLE = 2 GOTO 606
+590 PRINT "You approach the painting of the young  man.  He seems to smirk at you as you   pull his portrait off the wall,         revealing a KEYHOLE.
+591 KHEYHOLE = 2
+595 PRINT ""
+596 PRINT "Press SPACE to continue.";
+600 GET ZZ$
+605 GOTO 502
+
+606 PRINT "The young man smirks up at you from the ground.  He unsettles you.
+607 GOTO 595
+
+610 REM TABLE CHECK, FIND KEY
+615 HOME
+616 IF KEY = 1 GOTO 641
+620 PRINT "You investigate the table.  Shifting through the papers and knicknacks, you discover a small rusted iron key.
+625 PRINT "
+630 PRINT "You have acquired a KEY.
+635 KEY = 1
+640 GOTO 595
+
+641 REM TABLE CHECK, ALREADY FOUND KEY
+641 PRINT "You investigate the table again, but    don't find anything else.
+642 GOTO 595
+
+
+650 REM KEYHOLE
+650 HOME
+651 IF KEY = 1 THEN GOTO 670
+655 IF KEY = 0 THEN PRINT "The keyhole is small and made of rusted iron.  It looks sturdy; you don't think you'll be able work the mechanism       without the key.  
+656 PRINT "
+660 PRINT "Wherever that might be....."
+665 GOTO 595
+
+670 PRINT "You insert the key into the keyhole and turn it with effort.  The walls of the  small gallery rumble as the mural of    the beast rises into the ceiling,       revealing a dark PASSAGE into another   room to the west.
+675 PASSAGE = 1
+680 PRINT "
+685 GOTO 595
+
+
+690 REM MURAL
+690 HOME
+691 IF PASSAGE = 1 THEN GOTO 725
+695 PRINT "The creature depicted in the mural has  too many eyes and too many teeth, and   looking at it for too long makes your   stomach curdle.
+700 PRINT "
+705 PRINT "You notice that the edges of the mural  look strange, almost disconnected...
+710 PRINT "
+715 PRINT "Could this wall.... move?
+720 GOTO 595
+725 PRINT "
+
+730 REM PASSAGE / ALTAR ROOM
+730 HOME
+731 IF ALTAR = 3 GOTO 825
+735 PRINT "As soon as you cross the threshold of   the dark room, it bursts to light with  cold blue fire.  
+736 PRINT "
+740 PRINT "By this eerie other-light, you can see  an altar made of stacked bones upon     which rests the skull of a goat-like    animal and a knife.
+741 PRINT "
+745 PRINT "As you lean closer to investigate, the  eyes of the goat flare with white fire  that consumes your vision, and you hear horrible dead laughter and you stumble  back...
+750 PRINT ""
+751 ALTAR = ALTAR + 1
+755 PRINT "Press SPACE to continue.";
+760 GET ZZ$
+761 IF ALTAR = 3 GOTO 780
+765 HOME
+770 PRINT ".....
+775 GOTO 750
+780 HOME
+785 PRINT "When you come back to consciousness,    the fire in the skull's eyes still      burns, but far more dimly, and there is a smear of dark crimson on its          forehead.
+786 PRINT "
+790 PRINT "You look down at your hand and see a    ragged gash, still dripping blood.
+791 PRINT "
+792 PRINT "The knife is gone.
+793 PRINT "
+795 PRINT "You leave the room...
+800 PRINT ""
+805 PRINT "Press SPACE to continue.";
+810 GET ZZ$
+820 GOTO 502
+
+825 PRINT "Being in this room makes you unsettled. The eye sockets of the goat skull still glow with simmering white fire,         seemingly fueled by your blood.
+830 GOTO 793
+
+
+835 REM WEST ROOM
+835 HOME
+840 PRINT "You are in a furnished sitting room.  
+841 PRINT"
+842 PRINT "You don't see anything particularly     significant about the room, but you     sense dark energy nearby.... to the     north?  You can't tell.
+845 PRINT "
+850 PRINT "You decide to go back...
+855 PRINT ""
+860 PRINT "Press SPACE to continue.";
+865 GET ZZ$
+870 GOTO 230
+
+
+
+
+
+880 REM STAIRCASE
+880 HOME
+881 IF ALTAR = 3 THEN GOTO 1000
+885 PRINT "You go up the stairs.  
+890 PRINT "
+895 PRINT "You see a room with no furnishings.     The floor walls and ceiling are all     white, except for an arcane circle      scrawled in stark black on the far      wall.  
+898 PRINT "
+899 PRINT "You don't recognize the symbols...
+900 PRINT "
+905 GOTO 850
+
+1000 REM STAIRCASE, RED ROOM
+1000 HOME
+1005 PRINT "You go up the stairs.  
+1010 PRINT "
+1015 PRINT "You see a room with no furnishings.     The floor walls and ceiling are all     white, except for an arcane CIRCLE      scrawled in stark black on the far      wall.  
+1020 PRINT "
+1025 PRINT "Your eyes can't seem to focus on the    symbols, and that sensation makes you   nauseous.  As you examine the bare      white walls and floor, you hear a       gentle TAP on the floor behind you...
+1030 PRINT "
+1032 PRINT "Press SPACE to continue...";
+1035 GET ZZ$
+1040 HOME
+1045 PRINT "You turn around but don't immediately   see the source of the noise....
+1050 PRINT "
+1055 PRINT "You glance at the floor as you hear a   second TAP and notice two small dark    dots, quickly joined by a third with    another TAP.  
+1056 PRINT "You glance at the ceiling and notice    rivulets of thick dark liquid soaking   through the cracks in the white paint.
+1060 PRINT "
+1065 PRINT "Quickly a fourth and fifth drop hit the floor, and then they become             incountable, the liquid beginning to    soak through the walls as well,         rivulets of liquid forming puddles of   deep red on the floor.  
+1066 PRINT "The smell of iron fills the air as you  realize that the liquid is BLOOD.
+1070 PRINT "
+1075 PRINT "Press SPACE to continue...";
+1080 GET ZZ$
+1085 HOME
+1090 PRINT "You move to leave, but the DOOR slams   shut, trapping you and the blood in the room.  "
+1091 PRINT"
+1095 PRINT "The walls are completely soaked crimson at this point, the thick scent cloying  at your lungs.  "  
+1096 PRINT "
+1100 PRINT "The blood begins to quickly rise, and   soon it reaches your shins.  You have   to splash through it to get to the      door." 
+1101 PRINT "
+1105 PRINT "You struggle to turn the handle, but it refuses to open and you start to panic  as blood drips down onto your shoulders and head.  The handle becomes slippery, and you begin to fear you will die in   this room.  You sense a bright LIGHT    behind you.
+1110 PRINT "
+1115 PRINT "Press SPACE to continue...";
+1120 GET ZZ$
+1125 HOME    
+1130 PRINT "You turn to face the source of the      light, wiping thick blood out of your   eyes.
+1131 PRINT "
+1135 PRINT "The circle on the wall has ignited,     swirling white, and you can sense       malevolent energy radiating off of it.
+1136 PRINT "
+1140 PRINT "You're pretty sure the source of the    haunting of this house will be found    inside the PORTAL.
+1141 PRINT "
+1145 PRINT "Do you pass through the CIRCLE (YES/NO)
+1146 PRINT "
+1150 INPUT D$
+1155 IF D$ = "YES" THEN GOTO 1205
+1160 IF D$ = "NO" THEN GOTO 1300
+1165 HOME
+1170 PRINT "In the few seconds it takes you to      decide what to do, the CIRCLE flares    brighter, and you see tentacles, and    eyes, and teeth, pour out, before blood gets in your eyes again, and you are    blinded....
+1175 PRINT "
+1180 PRINT "You don't have time to clear your       vision before your body is torn apart.
+1185 PRINT "
+1186 INVERSE
+1190 PRINT "THE END";
+1195 NORMAL
+1200 END
+
+1205 REM YOU ENTER THE UNDERWORLD
+1205 HOME
+1210 PRINT "You have to end the curse on this building.  It's what you came here to do, and the only way to do that is to enter the gate before you."
+1215 PRINT "You sprint full tilt to the circle, slipping a little bit on the knee high blood, before you pass through the portal and ";
+1220 INVERSE
+1225 PRINT "EXIT THIS PLANE OF EXISTENCE...."
+1230 PRINT "PRESS SPACE TO CONTINUE...";
+1235 GET ZZ$
+1240 HOME
+1245 PRINT "....."
+1250 PRINT "PRESS SPACE TO CONTINUE...";
+1255 GET ZZ$
+1260 HOME
+1261 PRINT "
+1265 PRINT "END OF PART 1.......
+1270 PRINT "
+1275 PRINT "YOU WIN!!!!"
+1280 END
+
+
+1300 REM YOU DROWN IN BLOOD
+1300 HOME
+1305 PRINT "You decide the best thing to do is      wait, regroup, find better equipment to deal with this level of haunting.
+1306 PRINT "
+1310 PRINT "You turn back to the doorway, bracing   yourself and trying to force it open.
+1311 PRINT "
+1315 PRINT "Soon the blood rises past your hips,    and the doorknob, and then your chest,  and with a sinking feeling you realize  the door will not open.  
+1316 PRINT "
+1317 PRINT "It is too late.
+1318 PRINT "
+1320 PRINT "You keep your head above the surface    until the blood reaches the ceiling of  the room, gasping in a last breath and  holding it for as long as you can......
+1321 PRINT "
+1324 INVERSE 
+1325 PRINT "THE END";
+1330 NORMAL
+1335 END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
