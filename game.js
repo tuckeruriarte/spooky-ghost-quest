@@ -1,8 +1,7 @@
 let myFont
 
-let screen = "menu"
+let screen = "preintro"
 
-let start = true
 let foyer = false
 let attemptLeave = false
 let idol = false
@@ -19,6 +18,8 @@ let wordsy
 let wordsx2
 let wordsy2
 let i = 0
+
+let blep = false
 
 let usertext = ""
 
@@ -41,17 +42,28 @@ function setup() {
 function draw() {
 
 
-	background(0) //black background with white square
+	if (frameCount % 14 == 0) {
+
+    	if (blep == false) {
+    		blep = true
+
+    	} else if (blep == true) {
+      		blep = false
+
+    	}
+	}
+
+	background(0)
 		push()
 			stroke(255)
 			strokeWeight(2)
 			noFill()
 
-			rect(80, 60, 640, 480)  //border
+			rect(80, 60, 640, 480)
 		pop()
 
 	fill(255)
-	textFont(myFont) //apple II font
+	textFont(myFont)
 	textSize(16)
 
 
@@ -62,20 +74,29 @@ print(screen)
 
 		textAlign(CENTER, CENTER)
 
-		typeWriter("Spooky Ghost Quest V. II\n \n \nStart", width/2, height/2)
+		typeWriter("Spooky Ghost Quest V. II\n\n\nStart", width/2, height/2)
 			
-			if (i == wordsnow.length) {
-				if (start == true) {
-					text(" \n\n\n**        **", width/2, height/2)
-				} 
-
-				// if (start == false) {
-				// 	text (" \n \n \n \n*          *", width/2, height/2)
-				// }
+			if (i == wordsnow.length && blep == true) {
+			
+				text("\n\n\n>       <", width/2, height/2)
+			
 			}
 	} 
 	
 
+	if (screen == "preintro") {
+
+		textAlign(LEFT, TOP)
+
+		typeWriter("You are driving through a dense\
+			\nforest.  It's been a hot minute since\nyou've seen signs of civilization.\n \
+			\nProbably because this region is\nsupposed to be just Chalk Full of\nghosts.\
+			\n\nYou review what you've heard about\nthe house you're investigating.\n \
+			\nIt's pretty standard stuff:\nPortal to the very depths of hell.\n'Azathoth will rise again', etc.\
+			The idea is to destroy the evil center of the house\
+			\n\nPress ENTER to continue.....", 100, 80, 620, 460)
+
+	}
 
 
 	if (screen == "intro") {
@@ -192,7 +213,7 @@ print(screen)
 
 
 
-	if (screen == "foyer") {
+	if (screen == "foyer") {  ///add in the west room, encounter w a ghost?  kiss???  Information...??
 
 		typeWriter("You are in a dimly lit FOYER.\
 		\nThere is a STAIRCASE leading up to a darkened second floor.\
@@ -237,16 +258,16 @@ print(screen)
 	if (screen == "staircase2c") {
 
 		typeWriter("You move to leave, but the DOOR slams shut, trapping you and the blood in the room.\
-		The walls are completely soaked crimson at this point, the thick scent cloying at your lungs.\
-		The blood begins to quickly rise, and soon it reaches your shins.\
+		The walls are completely soaked crimson, the thick scent cloying at your lungs.\
+		The blood begins to quickly rise.\
 		You have to splash through it to get to the door.\
-		You struggle to turn the handle, but it refuses to open and you start to panic as blood drips down onto your shoulders and head.\
+		You struggle to turn the handle but it refuses to open and you start to panic as blood drips down onto your shoulders and head.\
 		The handle becomes slippery, and you begin to fear you will die in this room.  You sense a bright LIGHT behind you.\
-		Press SPACE to continue...", 100, 80, 620, 460)
+		Press ENTER to continue...", 100, 80, 620, 460)
 
 	}
 
-	if (screen == "finale") {
+	if (screen == "finale") { //finish finale
 
 		typeWriter("You turn to face the source of the light, wiping thick blood out of your eyes.\
 		The circle on the wall has ignited, swirling white, and you can sense malevolent energy radiating off of it.\
@@ -256,12 +277,12 @@ print(screen)
 
 
 
-	if (screen == "gallery") {
+	if (screen == "gallery") { //add in the option to go back to the foyer.  //also maybe add in the table???
 
 		typeWriter("You are in a long rectangular room.\
 		\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
 		\n\nThe west wall is taken up by a large MURAL depicting a monster rising from a pit of fire.\
-		Its many eyes seem to flicker.  Must be a trick of the light...", 100, 80, 620, 480)
+		Its many eyes seem to flicker.  Must be a trick of the light....", 100, 80, 620, 480)
 
 	}
 
@@ -273,7 +294,7 @@ print(screen)
 			\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
 			\nOne of these rests on the floor.  In its place on the wall is a hollow containing an iron LEVER.\
 			\n\nThe west wall is taken up by a large MURAL depicting a monster rising from a pit of fire.\
-			Its many eyes seem to flicker.  Must be a trick of the light.", 100, 80, 620, 480)
+			Its many eyes seem to flicker.  Must be a trick of the light....", 100, 80, 620, 480)
 
 	}
 
@@ -333,7 +354,7 @@ print(screen)
 
 	if (screen == "lever") {
 
-		typeWriter("You carefully grab the iron lever, steeling your nerves before pulling it with effort.\
+		typeWriter("You grab the iron lever, steeling your nerves before pulling it with effort.\
 		\n\nIt slams down with a hollow \n\n        *CLANG*.\
 		\n\n\n\nThe walls of the small gallery rumble as the mural of the beast rises into the ceiling,\
 		revealing a dark PASSAGE into another room to the west...\
@@ -408,11 +429,16 @@ function keyPressed() {
 	// } 
 
 	if (keyCode === (ENTER)) {
+		
 		if (screen == "menu") {
-			if (start == true) {
-				screen = "intro"
-				i = 0
-			}
+			screen = "preintro"
+			i = 0
+		
+
+
+		} else if (screen == "preintro") {
+			screen = "intro"
+			i = 0
 
 
 

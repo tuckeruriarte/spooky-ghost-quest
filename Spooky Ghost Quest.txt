@@ -80,7 +80,7 @@
 
 300 REM TAKE ROAD
 300 HOME
-305 PRINT "Probably there aren't ghosts here, you  decide, looking around nervously.  
+305 PRINT "Probably there aren't ghosts here, you decide, looking around nervously.  
 310 PRINT "You get back in your car and lock the   doors.  
 315 PRINT "You drive quickly back into town,       carefully putting the spooky mansion    out of your mind, thinking of what to   have for dinner instead."
 320 PRINT ""
