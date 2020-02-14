@@ -1,6 +1,6 @@
 let myFont
 
-let screen = "outside1"
+let screen = "menu"
 
 let foyer = false
 let attemptLeave = false
@@ -76,7 +76,7 @@ print(screen)
 
 		textAlign(CENTER, CENTER)
 
-		typeWriter("Spooky Ghost Quest V. II\n\n\nStart", width/2, height/2)
+		typeWriter("Spooky Ghost Quest V. III\n\n\nStart", width/2, height/2)
 			
 			if (i == wordsnow.length && blep == true) {
 			
