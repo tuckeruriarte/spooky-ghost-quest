@@ -1,6 +1,6 @@
 let myFont
 
-let screen = "menu"
+let screen = "car2"
 
 let foyer = false
 let attemptLeave = false
@@ -100,7 +100,7 @@ print(screen)
 		textAlign(LEFT, TOP)
 
 		typeWriter("You are driving through a dense\
-			\nforest.  Comtemplatively.\n \
+			\nforest...  Comtemplatively.\n \
 			\n  This region is supposed to be just\n  Chock Full of wicked spirits.\
 			\n\nGood thing you're here to bust em!\
 			\n  A house on the south end of the\n  valley has a sordid history that\n  leads you to believe it's the\
@@ -132,10 +132,11 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You are on a winding, overgrown drive surrounded by dense WOODS.\
-		\n\nThere is an ancient HOUSE in front of you and the ROAD to town behind.\
-		\nYour CAR sits where you parked it.  \nWhat do you do?\
-		\n\n\n   TO PLAY:\n     Type your selection from the\
+		typeWriter("You are standing on an overgrown\ndrive surrounded by dense WOODS.\
+		\n\nThere is a spooky and ancient HOUSE in front of you.\
+		\n\nThe ROAD to town is behind you, and\nyour CAR sits where you parked it.\
+		\nThe whole scene has pretty bad vibes.\nWhat do you do?\
+		\n\n   TO PLAY:\n     Type your selection from the\
 		\n     list of emphasized WORDS and\n     then press ENTER to\n     continue.....", 100, 80, 620, 460)
 	}
 
@@ -145,9 +146,10 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You are on a winding, overgrown drive surrounded by dense WOODS.\
-		\n\nThere is an ancient HOUSE in front of you and the ROAD to town behind.\
-		\nYour CAR sits where you parked it.  \nWhat do you do?", 100, 80, 620, 460)
+		typeWriter("You are standing on an overgrown\ndrive surrounded by dense WOODS.\
+		\n\nThere is a spooky and ancient HOUSE in front of you.\
+		\n\nThe ROAD to town is behind you, and\nyour CAR sits where you parked it.\
+		\nThe whole scene has pretty bad vibes.\nWhat do you do?", 100, 80, 620, 460)
 	}
 
 
@@ -156,13 +158,12 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("Probably there aren't ghosts here,\nyou decide, looking around nervously.\
-		\nYou get back in your car and lock the\ndoors, breathing out a small sigh of\nrelief.\
-		\n\nCarefully putting the spooky mansion\nout of your mind, you begin the drive\nback into town.\
-		\n\n...\
-		\n\nYou're pretty sure you saw a good\nrestaurant on the way in that you can\nstop at for dinner.\
-		\n\n...\
-		\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 460)
+		typeWriter("Wait a minute! There aren't ghosts\nhere, you remember, laughing to\nyourself and looking around\nnervously.\
+		\n\nYou get back in your car and lock the\ndoors, breathing out a small sigh of\nrelief.\
+		\n\nThe car starts first try, and you\ncheerfully put the spooky house\nbehind you.\
+		\n\nYou're pretty sure you saw a good\nmilkshake joint in town, so that's\
+		\nexciting! You didn't get to stop\nearlier, but now you've got the chance.\
+		\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 
@@ -171,13 +172,13 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You suddenly, jarringly find yourself\nback in front of the dark manor.\
-		\nIt's dark windows stare at you like\nthe eye sockets of a skull...\
-		\n\nIt seems you won't be able to leave so easily.\
-		\n\nYou get back out of your car.\
-		\n\nYou are on a winding, overgrown drive surrounded by dense WOODS.\
-		\nThere is an ancient HOUSE in front of you and the ROAD to town behind.\
-		Your CAR sits where you parked it.  \nWhat do you do?", 100, 80, 620, 460)
+		typeWriter("You suddenly find yourself coasting\nto a stop in front of the manor.\
+		\nYou look at it, annoyed.\
+		\n\nIt seems like you're stuck here till you solve the problem. You sigh and get back out of your car...\
+		\n\nYou are standing on an overgrown\ndrive surrounded by dense WOODS.\
+		\n\nThere is a spooky and ancient HOUSE in front of you.\
+		\n\nThe ROAD to town is behind you, and\nyour CAR sits where you parked it.\
+		\nThe whole scene has pretty bad vibes.\nWhat do you do?", 100, 80, 620, 460)
 	}
 
 
@@ -186,12 +187,13 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You try to leave again, keeping your mind fixed on the road to town...\
-		\nOnce again, you find yourself facing the foreboding front of the manor house.\
-		\nYou seem to be trapped until you can destroy whatever binds you here....\
-		\n\nYou are on a winding, overgrown drive surrounded by dense WOODS.\
-		\nThere is an ancient HOUSE in front of you and the ROAD to town behind.\
-		\nYour CAR sits where you parked it.  What do you do?", 100, 80, 620, 460)
+		typeWriter("You try to leave again, this time\nkeeping focused on the road back\
+		\nto town, but you find yourself right\nback in front of the stupid house.\
+		\nYou seem to be trapped until you can\ndestroy the source of the haunting...\
+		\nYou are standing on an overgrown\ndrive surrounded by dense WOODS.\
+		\n\nThere is a spooky and ancient HOUSE in front of you.\
+		\n\nThe ROAD to town is behind you, and\nyour CAR sits where you parked it.\
+		\nThe whole scene has pretty bad vibes.\nWhat do you do?", 100, 80, 620, 460)
 	}
 
 
@@ -200,10 +202,12 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You glance back into your car, hoping to maybe find some kind of tool or even just a flashlight.\
-			But no luck.  You're stuck with just your wits.  You make a note on your phone to reassess your ghost-busting toolkit\
-			as soon as you get out of this, and turn back to the manor house.....\
-			Press ENTER to conintue", 100, 80, 620, 460)
+		typeWriter("You look through the backseat of your\ncar, hoping to find some kind of tool\
+\nsomehow, or even just a flashlight.\
+\n\nNo luck though. You're stuck with\njust your wits.\
+		\n\nYou make a note on your phone to\nreassess your ghost-busting toolkit\nphilosophy as soon as you get out of this and turn back to the manor\
+		\nhouse...\
+		\n\n\n\n\n\n\n\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 
@@ -212,10 +216,10 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You search through your car again, this time opening up the trunk and looking under the seats.\
-			Still nothing, except you found a stain on the carpet from that time motor oil spilled in the backseat.\
-			You pull out your phone again with a sigh, and add another thing to your maintenance list...\
-			Press ENTER to conintue", 100, 80, 620, 460)
+		typeWriter("You search through your car again,\nthoroughly, opening up the trunk and\
+\nlooking under all the seats.\n\nNothing useful, but you do find a mozzarella stick on the floor.\
+		\n\nYou munch on it a little as you turn\nback toward the house...\
+		\n\n\n\n\n\n\n\n\n\n\n\n\n Press ENTER to conintue.....", 100, 80, 620, 460)
 	}
 
 
@@ -258,7 +262,7 @@ print(screen)
 		typeWriter("You pass through the trees, straining your ears to hear the otherworldy music.\
 		\n\nYou walk deeper, speeding up.\n  You feel a gentle hand caress your\n   back.\
 		\n    A breath sounds in your ear, and\n      you feel again the sensation\n       that you are about to hear a\n         great secret...\
-		\n\nYour foot meets nothing.  You find yourself on the razor edge of a ravine. You try to balance, but the tender hand on your back becomes a forceful one, and you are hurled out into the void.\
+		\n\nYour foot meets nothing. You find yourself on the razor edge of a ravine. You try to balance, but the tender hand on your back becomes a forceful one, and you are hurled out into the void.\
 		\n\nYou fall for a long, long time.....\
 		\n\nTHE END", 100, 80, 620, 460)
 	}
@@ -272,7 +276,7 @@ print(screen)
 		typeWriter("You step up the front steps of the HOUSE and cross the dusty porch.\
 		\nThe tarnished doorknob is cold under your hand as you turn and push the old door open.\
 		\n\nA shiver goes up your spine and you become aware of the creeping presence of the undead.....\
-	    \n\nYou are in a dimly lit FOYER, once well-furnished, now fallen into disrepair.\
+		\n\nYou are in a dimly lit FOYER, once well-furnished, now fallen into disrepair.\
 		\n\nThere is a STAIRCASE leading up to a darkened second floor.\
 		\nThere is a door to the NORTH.\
 		\nThere is also the door behind you, leading OUTSIDE.", 100, 80, 620, 460)//there is a door to the west and also one to the north
@@ -296,9 +300,9 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You go up the stairs.  At the top is an unfurnished room painted over bone white, \
+		typeWriter("You go up the stairs. At the top is an unfurnished room painted over bone white, \
 		\nexcept for a big arcane CIRCLE scrawled in stark black on the far wall.\
-		\n\nThis must be the hell portal!  You did it!\
+		\n\nThis must be the hell portal! You did it!\
 		\n\nCongratulating yourself, you walk over to the circle and try to smudge it out with your shoe.\
 		\n\nNothing happens.\
 		\n\nSeveral minutes of trying later, you determine that the only way to destroy\
@@ -342,7 +346,7 @@ print(screen)
 		The blood begins to quickly rise.\
 		You have to splash through it to get to the door.\
 		You struggle to turn the handle but it refuses to open and you start to panic as blood drips down onto your shoulders and head.\
-		The handle becomes slippery, and you begin to fear you will die in this room.  You sense a bright LIGHT behind you.\
+		The handle becomes slippery, and you begin to fear you will die in this room. You sense a bright LIGHT behind you.\
 		Press ENTER to continue...", 100, 80, 620, 460)
 
 	}
@@ -355,8 +359,8 @@ print(screen)
 		The circle on the wall has ignited, swirling and radiant, and you can sense malevolent energy radiating off of it.\
 		You're pretty sure the source of the evil living in this house is based in this CIRCLE.\
 		You think for a second, and then just Punch It with your GHOST BUSTING FISTS!!!\
-		The circle explodes. You sense the dissipation of psychic energy.  A peaceful aspect comes over the region.\
-		You busted all the ghosts.  You are happy.  THE END", 100, 80, 620, 480)
+		The circle explodes. You sense the dissipation of psychic energy. A peaceful aspect comes over the region.\
+		You busted all the ghosts. You are happy. THE END", 100, 80, 620, 480)
 
 	}
 
@@ -369,7 +373,7 @@ print(screen)
 		typeWriter("You are in a long rectangular room.\
 		\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
 		\n\nThe west wall is taken up by a large MURAL depicting a monster rising from a pit of fire.\
-		Its many eyes seem to flicker.  Must be a trick of the light....", 100, 80, 620, 480)
+		Its many eyes seem to flicker. Must be a trick of the light....", 100, 80, 620, 480)
 
 	}
 
@@ -381,9 +385,9 @@ print(screen)
 
 		typeWriter("You are in a long rectangular room.\
 			\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
-			\nOne of these rests on the floor.  In its place on the wall is a hollow containing an iron LEVER.\
+			\nOne of these rests on the floor. In its place on the wall is a hollow containing an iron LEVER.\
 			\n\nThe west wall is taken up by a large MURAL depicting a monster rising from a pit of fire.\
-			Its many eyes seem to flicker.  Must be a trick of the light....", 100, 80, 620, 480)
+			Its many eyes seem to flicker. Must be a trick of the light....", 100, 80, 620, 480)
 
 	}
 
@@ -396,7 +400,7 @@ print(screen)
 
 		typeWriter("You are in a long rectangular room.\
 			\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
-			\nOne of these rests on the floor.  In its place on the wall is a hollow containing an iron LEVER.  It is pulled.\
+			\nOne of these rests on the floor. In its place on the wall is a hollow containing an iron LEVER.  It is pulled.\
 			\n\nThe mural that used to fill the west wall is gone, revealing a rough-hewn PASSAGE, leading into a dark room.\
 			", 100, 80, 620, 480)
 
@@ -408,7 +412,7 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You inspect the dark paintings on the walls.  They're sort of unpleasant.\
+		typeWriter("You inspect the dark paintings on the walls. They're sort of unpleasant.\
 			\nYou notice one of a bitter young man is hanging slightly crooked,\
 			and upon closer inspection you find scuff marks on the wall nearby.\
 			\nIt seems this one was moved frequently in the past.\
@@ -571,8 +575,10 @@ function keyPressed() {
 				if (carlook == false) {
 					screen = "car1"
 					carlook = true
+					i = 0
 				} else {
 					screen = "car2"
+					i = 0
 				}
 			}
 
