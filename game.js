@@ -1,9 +1,10 @@
 let myFont
 
-let screen = "outside"
+let screen = "outside1"
 
 let foyer = false
 let attemptLeave = false
+let carlook = false
 let idol = false
 let portrait = false
 let passage = false
@@ -61,6 +62,7 @@ function draw() {
 
 			rect(80, 60, 640, 480)
 		pop()
+
 
 	fill(255)
 	textFont(myFont)
@@ -126,13 +128,26 @@ print(screen)
 	
 
 
+	if (screen == "outside1") {
+
+		textAlign(LEFT, TOP)
+
+		typeWriter("You are on a winding, overgrown drive surrounded by dense WOODS.\
+		\n\nThere is an ancient HOUSE in front of you and the ROAD to town behind.\
+		\nYour CAR sits where you parked it.  \nWhat do you do?\
+		\n\n\n   TO PLAY:\n     Type your selection from the\
+		\n     list of emphasized WORDS and\n     then press ENTER to\n     continue.....", 100, 80, 620, 460)
+	}
+
+
+
 	if (screen == "outside") {
 
 		textAlign(LEFT, TOP)
 
 		typeWriter("You are on a winding, overgrown drive surrounded by dense WOODS.\
 		\n\nThere is an ancient HOUSE in front of you and the ROAD to town behind.\
-		Your CAR sits where you parked it.  \nWhat do you do?", 100, 80, 620, 460)
+		\nYour CAR sits where you parked it.  \nWhat do you do?", 100, 80, 620, 460)
 	}
 
 
@@ -145,9 +160,9 @@ print(screen)
 		\nYou get back in your car and lock the\ndoors, breathing out a small sigh of\nrelief.\
 		\n\nCarefully putting the spooky mansion\nout of your mind, you begin the drive\nback into town.\
 		\n\n...\
-		\nYou're pretty sure you saw a good\nrestaurant on the way in that you can\nstop at for dinner.\
-		\n...\
-		\n\n\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 460)
+		\n\nYou're pretty sure you saw a good\nrestaurant on the way in that you can\nstop at for dinner.\
+		\n\n...\
+		\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 
@@ -177,8 +192,31 @@ print(screen)
 		\n\nYou are on a winding, overgrown drive surrounded by dense WOODS.\
 		\nThere is an ancient HOUSE in front of you and the ROAD to town behind.\
 		\nYour CAR sits where you parked it.  What do you do?", 100, 80, 620, 460)
+	}
 
-		}
+
+
+	if (screen == "car1") {
+
+		textAlign(LEFT, TOP)
+
+		typeWriter("You glance back into your car, hoping to maybe find some kind of tool or even just a flashlight.\
+			But no luck.  You're stuck with just your wits.  You make a note on your phone to reassess your ghost-busting toolkit\
+			as soon as you get out of this, and turn back to the manor house.....\
+			Press ENTER to conintue", 100, 80, 620, 460)
+	}
+
+
+
+	if (screen == "car2") {
+
+		textAlign(LEFT, TOP)
+
+		typeWriter("You search through your car again, this time opening up the trunk and looking under the seats.\
+			Still nothing, except you found a stain on the carpet from that time motor oil spilled in the backseat.\
+			You pull out your phone again with a sigh, and add another thing to your maintenance list...\
+			Press ENTER to conintue", 100, 80, 620, 460)
+	}
 
 
 
@@ -258,12 +296,15 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 
-		typeWriter("You go up the stairs.  You see a room with no furnishings. \
-		\n\nThe floor, walls, and ceiling are all painted over white, except for an arcane CIRCLE scrawled in stark black on the far wall.\
-		\n\nYou don't recognize the symbols...\
-		\n\nThere is nothing else in the room...\
-		\n\nYou go back downstairs...\
-		\n\n\n\n\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 460)
+		typeWriter("You go up the stairs.  At the top is an unfurnished room painted over bone white, \
+		\nexcept for a big arcane CIRCLE scrawled in stark black on the far wall.\
+		\n\nThis must be the hell portal!  You did it!\
+		\n\nCongratulating yourself, you walk over to the circle and try to smudge it out with your shoe.\
+		\n\nNothing happens.\
+		\n\nSeveral minutes of trying later, you determine that the only way to destroy\
+		this circle is to get it kicking and then dispel the magic powering it.\
+		cursing, you go back downstairs.\
+		\n\n\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 	if (screen == "staircase2a") {
@@ -311,8 +352,11 @@ print(screen)
 		textAlign(LEFT, TOP)
 
 		typeWriter("You turn to face the source of the light, wiping thick blood out of your eyes.\
-		The circle on the wall has ignited, swirling white, and you can sense malevolent energy radiating off of it.\
-		You're pretty sure the source of the evil living in this house is based in this CIRCLE.", 100, 80, 620, 480)
+		The circle on the wall has ignited, swirling and radiant, and you can sense malevolent energy radiating off of it.\
+		You're pretty sure the source of the evil living in this house is based in this CIRCLE.\
+		You think for a second, and then just Punch It with your GHOST BUSTING FISTS!!!\
+		The circle explodes. You sense the dissipation of psychic energy.  A peaceful aspect comes over the region.\
+		You busted all the ghosts.  You are happy.  THE END", 100, 80, 620, 480)
 
 	}
 
@@ -479,13 +523,13 @@ function keyPressed() {
 
 
 		} else if (screen == "intro") {
-			screen = "outside"
+			screen = "outside1"
 			i = 0 
 
 
 
 
-		} else if (screen == "outside" || screen == "road1b" || screen == "road2") {
+		} else if (screen == "outside" || screen == "outside1" || screen == "road1b" || screen == "road2") {
 			
 			if (usertext == "ROAD" || usertext == "road" || usertext == "Road") {
 				if (attemptLeave == false) {
@@ -523,19 +567,20 @@ function keyPressed() {
 					woods = 3
 					i = 0
 				}
+			} else if (usertext == "CAR" || usertext == "car" || usertext == "Car") {
+				if (carlook == false) {
+					screen = "car1"
+					carlook = true
+				} else {
+					screen = "car2"
+				}
 			}
 
 
 
 
 
-		} else if (screen == "woods1") {
-			screen = "outside"
-			i = 0
-
-
-
-		} else if (screen == "woods2") {
+		} else if (screen == "woods1" || screen == "woods2" || screen == "road1b" || screen == "car1" || screen == "car2") {
 			screen = "outside"
 			i = 0
 
@@ -551,9 +596,6 @@ function keyPressed() {
 			screen = "road1b"
 			i = 0
 
-		} else if (screen == "road1b") {
-			screen = "outside"
-			i = 0
 		
 
 
@@ -663,7 +705,7 @@ function keyPressed() {
 				i = 0
 			}
 
-		} else if (scree == "passage3") {
+		} else if (screen == "passage3") {
 			screen = "gallery3"
 			i = 0
 		
@@ -713,6 +755,11 @@ function keyPressed() {
 
 
 		usertext = ""
+
+	} else if (keyCode === BACKSPACE || keyCode === SHIFT || keyCode === CONTROL || keyCode === 20 || keyCode === UP_ARROW || keyCode === LEFT_ARROW || keyCode === RIGHT_ARROW || keyCode === DOWN_ARROW || keyCode === ALT) {
+
+		usertext = usertext
+
 	} else {
 		usertext += key
 	}
@@ -742,7 +789,7 @@ function typing() {
 }
 		
 function mouseClicked() {
-		print(int(mouseX), int(800+(mouseY)));
+		print(int(mouseX), int((mouseY)));
 	}
 
 
