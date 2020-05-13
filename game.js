@@ -1,6 +1,6 @@
 let myFont
 
-let screen = "menu"
+let screen = "outside0"
 
 let foyer = false
 let attemptLeave = false
@@ -35,7 +35,7 @@ function preload() {
 function setup() {
 	let canvas = createCanvas(800, 600)
 	canvas.parent("p5")
-	frameRate(17)
+	frameRate(24)
 }
 
 
@@ -43,7 +43,7 @@ function setup() {
 function draw() {
 
 
-	if (frameCount % 14 == 0) {
+	if (frameCount % 12 == 0) {
 
     	if (blep == false) {
     		blep = true
@@ -100,7 +100,7 @@ print(screen)
 		textAlign(LEFT, TOP)
 
 		typeWriter("You are driving through a dense\
-			\nforest...  Comtemplatively.\n \
+			\nforest...  comtemplatively.\n \
 			\n  This region is supposed to be just\n  Chock Full of wicked spirits.\
 			\n\nGood thing you're here to bust em!\
 			\n  A house on the south end of the\n  valley has a sordid history that\n  leads you to believe it's the\
@@ -128,14 +128,14 @@ print(screen)
 	
 
 
-	if (screen == "outside1") {
+	if (screen == "outside0") {
 
 		textAlign(LEFT, TOP)
 
 		typeWriter("You are standing on an overgrown\ndrive surrounded by dense WOODS.\
-		\n\nThere is a spooky and ancient HOUSE in front of you.\
+		\n\n  There is a spooky and ancient HOUSE\n  in front of you.\
 		\n\nThe ROAD to town is behind you, and\nyour CAR sits where you parked it.\
-		\nThe whole scene has pretty bad vibes.\nWhat do you do?\
+		\n  The whole scene has pretty bad\n  vibes.\n\nWhat do you do?\
 		\n\n   TO PLAY:\n     Type your selection from the\
 		\n     list of emphasized WORDS and\n     then press ENTER to\n     continue.....", 100, 80, 620, 460)
 	}
@@ -147,9 +147,9 @@ print(screen)
 		textAlign(LEFT, TOP)
 
 		typeWriter("You are standing on an overgrown\ndrive surrounded by dense WOODS.\
-		\n\nThere is a spooky and ancient HOUSE in front of you.\
+		\n\n  There is a spooky and ancient HOUSE\n  in front of you.\
 		\n\nThe ROAD to town is behind you, and\nyour CAR sits where you parked it.\
-		\nThe whole scene has pretty bad vibes.\nWhat do you do?", 100, 80, 620, 460)
+		\n  The whole scene has pretty bad\n  vibes.\n\nWhat do you do?", 100, 80, 620, 460)
 	}
 
 
@@ -175,10 +175,7 @@ print(screen)
 		typeWriter("You suddenly find yourself coasting\nto a stop in front of the manor.\
 		\nYou look at it, annoyed.\
 		\n\nIt seems like you're stuck here till you solve the problem. You sigh and get back out of your car...\
-		\n\nYou are standing on an overgrown\ndrive surrounded by dense WOODS.\
-		\n\nThere is a spooky and ancient HOUSE in front of you.\
-		\n\nThe ROAD to town is behind you, and\nyour CAR sits where you parked it.\
-		\nThe whole scene has pretty bad vibes.\nWhat do you do?", 100, 80, 620, 460)
+		\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 
@@ -190,10 +187,7 @@ print(screen)
 		typeWriter("You try to leave again, this time\nkeeping focused on the road back\
 		\nto town, but you find yourself right\nback in front of the stupid house.\
 		\nYou seem to be trapped until you can\ndestroy the source of the haunting...\
-		\nYou are standing on an overgrown\ndrive surrounded by dense WOODS.\
-		\n\nThere is a spooky and ancient HOUSE in front of you.\
-		\n\nThe ROAD to town is behind you, and\nyour CAR sits where you parked it.\
-		\nThe whole scene has pretty bad vibes.\nWhat do you do?", 100, 80, 620, 460)
+		\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 
@@ -527,13 +521,13 @@ function keyPressed() {
 
 
 		} else if (screen == "intro") {
-			screen = "outside1"
+			screen = "outside0"
 			i = 0 
 
 
 
 
-		} else if (screen == "outside" || screen == "outside1" || screen == "road1b" || screen == "road2") {
+		} else if (screen == "outside" || screen == "outside0") {
 			
 			if (usertext == "ROAD" || usertext == "road" || usertext == "Road") {
 				if (attemptLeave == false) {
@@ -586,7 +580,7 @@ function keyPressed() {
 
 
 
-		} else if (screen == "woods1" || screen == "woods2" || screen == "road1b" || screen == "car1" || screen == "car2") {
+		} else if (screen == "woods1" || screen == "woods2" || screen == "road1b" || screen == "road2" || screen == "car1" || screen == "car2"){
 			screen = "outside"
 			i = 0
 
