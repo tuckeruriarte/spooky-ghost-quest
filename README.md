@@ -1,1 +1,1 @@
-# Spooky-Ghost-Quest
+# spooky-ghost-quest
