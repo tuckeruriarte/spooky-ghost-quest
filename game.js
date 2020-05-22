@@ -147,23 +147,32 @@ print(screen)
 	if (screen == "road1a") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("You take a good, hard look at the\nroad leading away from the manor\
-		\nand toward the safe, friendly town.\
-		\n  You look back at the dingy hell-\n  house in front of you; that's\
-		\n  where all the ghosts are, the ones\n  you're super prepared to fight.\
-		\n\nMaybe........\nMaybe, now that you think about it,\nbefore going in it'd be good to get\na snack or something.\
+		typeWriter("You take a good, hard look at the\ndingy hellhouse in front of you.\
+		\nThat's where all the ghosts are.\nThe ones you're gonna fight and are\nsuper ready for.\
+		\n\n  You look back at the road leading\n  toward the safe, friendly town.\
+		\n\nUm.  Now that you think about it,\nmaybe it'd be good to get a snack\
+		\nor something first.  Yeah!  You're\nhungry, and it's cookie time!\
 		\n\n  You get in your car, quickly\n  locking the door (for reasons\
 		\n  unrelated to ghosts) before\n  starting the engine and heading\n  towards town...\
-		\n\n Press ENTER to continue.....", 100, 80, 620, 460)
+		\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 		
 	if (screen == "road1b") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("You suddenly find yourself coasting\nto a stop in front of the manor.\
-		\nYou look at it, annoyed.\
-		\n\nIt seems like you're stuck here till you solve the problem. You sigh and get back out of your car...\
+		typeWriter("The spooky house disappears from your mirror once you turn off of the drive,\
+		and you breathe a sigh of relief.  Better than cookies for fighting ghosts would be like\
+		a good solid vacation.  Yeh yeh yeh, you deserve a break!  Somewhere warm with\
+		a beach maybe?  That'd be rad...\
 		\n Press ENTER to continue.....", 100, 80, 620, 460)
+
+		// typeWriter("\
+		// \
+		// \
+		// You suddenly find yourself coasting\nto a stop in front of the manor.\
+		// \nYou look at it, annoyed.\
+		// \n\nIt seems like you're stuck here till you solve the problem. You sigh and get back out of your car...\
+		// \n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 	if (screen == "road2") {
@@ -194,7 +203,7 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 		typeWriter("You search through your car again,\nthoroughly, opening up the trunk and\
-		\nlooking under all the seats.\n\nNothing useful, but you do find a mozzarella stick on the floor.\
+		\nlooking under all the seats.\n\nNothing useful, but you do find an open sleeve of cookies on the floor.\
 		\n\nYou munch on it a little as you turn\nback toward the house...\
 		\n\n\n\n\n\n\n\n\n\n\n\n\n Press ENTER to conintue.....", 100, 80, 620, 460)
 	}
