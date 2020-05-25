@@ -1,6 +1,6 @@
 let myFont
 
-let screen = "road1a"
+let screen = "road1c"
 
 let foyer = false
 let attemptLeave = false
@@ -160,19 +160,25 @@ print(screen)
 	if (screen == "road1b") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("The spooky house disappears from your mirror once you turn off of the drive,\
-		and you breathe a sigh of relief.  Better than cookies for fighting ghosts would be like\
-		a good solid vacation.  Yeh yeh yeh, you deserve a break!  Somewhere warm with\
-		a beach maybe?  That'd be rad...\
-		\n Press ENTER to continue.....", 100, 80, 620, 460)
+		typeWriter("You follow the curve of the road\
+		\nand when the spooky house fades from\nyour mirror, you breathe a sigh of\nrelief.\
+		\n\n  This cookie break was a really good\n  idea.\
+		\n\nMaybe better than cookies for\nfighting ghosts would be like... a\
+		ghost gun.  Maybe they have one at\nthe hardware store?\
+		\n\n  Or better yet, a good vacation!\n  You deserve a week, a couple weeks\
+		somewhere warm, with like a beach?\n  Hell yeah.  Then maybe you'll come\n  back to deal with this\
+		\n  shitshow.....\
+		\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
+	}
 
-		// typeWriter("\
-		// \
-		// \
-		// You suddenly find yourself coasting\nto a stop in front of the manor.\
-		// \nYou look at it, annoyed.\
-		// \n\nIt seems like you're stuck here till you solve the problem. You sigh and get back out of your car...\
-		// \n Press ENTER to continue.....", 100, 80, 620, 460)
+	if (screen == "road1c") {  ////finish formatting!!!!!
+		typeWriter("You suddenly find yourself coasting\nto a stop in front of the manor.\
+		\n\n  You look at it, annoyed.\
+		\n\nYou're sure you haven't turned\naround, which means this is probably\nsome kind of spectral influence.\
+		\n\n  You sigh.  Looks like you're\n  stuck here till you deal with the source of the haunting.\
+		You get out of your car and turn to face the freaky ghost house.\
+		Your tummy rumbles a little bit.\
+		\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 	if (screen == "road2") {
@@ -576,7 +582,7 @@ function keyPressed() {
 
 
 
-		} else if (screen == "woods1" || screen == "woods2" || screen == "road1b" || screen == "road2" || screen == "car1" || screen == "car2"){
+		} else if (screen == "woods1" || screen == "woods2" || screen == "road1c" || screen == "road2" || screen == "car1" || screen == "car2"){
 			screen = "outside"
 			i = 0
 
@@ -588,10 +594,14 @@ function keyPressed() {
 
 
 
+
 		} else if (screen == "road1a") {
 			screen = "road1b"
 			i = 0
 
+		} else if (screen == "road1b") {
+			screen = "road1c"
+			i = 0
 		
 
 
