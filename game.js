@@ -1,6 +1,6 @@
 let myFont
 
-let screen = "road1c"
+let screen = "road2"
 
 let foyer = false
 let attemptLeave = false
@@ -166,28 +166,31 @@ print(screen)
 		\n\nMaybe better than cookies for\nfighting ghosts would be like... a\
 		ghost gun.  Maybe they have one at\nthe hardware store?\
 		\n\n  Or better yet, a good vacation!\n  You deserve a week, a couple weeks\
-		somewhere warm, with like a beach?\n  Hell yeah.  Then maybe you'll come\n  back to deal with this\
+		somewhere warm, with like a beach?\n  Hell yeah. Then maybe you'll come\n  back to deal with this\
 		\n  shitshow.....\
 		\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 	if (screen == "road1c") {  ////finish formatting!!!!!
+		
+		textAlign(LEFT, TOP)
 		typeWriter("You suddenly find yourself coasting\nto a stop in front of the manor.\
 		\n\n  You look at it, annoyed.\
 		\n\nYou're sure you haven't turned\naround, which means this is probably\nsome kind of spectral influence.\
-		\n\n  You sigh.  Looks like you're\n  stuck here till you deal with the source of the haunting.\
-		You get out of your car and turn to face the freaky ghost house.\
-		Your tummy rumbles a little bit.\
-		\n Press ENTER to continue.....", 100, 80, 620, 460)
+		\n\n  You sigh. Looks like you're stuck\n  here till you deal with the source\n  of the haunting.\
+		\n\nYou get out of your car and turn to\nface the freaky ghost house.\
+		\nYour tummy rumbles a little bit.\
+		\n\n\n\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 	if (screen == "road2") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("You try to leave again, this time\nkeeping focused on the road back\
-		\nto town, but you find yourself right\nback in front of the stupid house.\
-		\nYou seem to be trapped until you can\ndestroy the source of the haunting...\
-		\n Press ENTER to continue.....", 100, 80, 620, 460)
+		typeWriter("It wouldn't hurt to try to leave\none more time, you decide, thinking\nabout how desperately you want a\ncookie and also to not be here.\
+		\n\n  You get into your car and drive\n  off, focusing really hard on\n  getting away from this stupid ghost\n  house.\
+		\n\nAfter a few minutes, you roll right\nback up to the front of the estate,\ncursing your luck furiously the whole\nway.\
+		\n\n  You get back out of your car. It\n  seems like you're trapped here\n  until you can take care of the\n  source of the haunting...\
+		\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 
