@@ -1,6 +1,6 @@
 let myFont
 
-let screen = "road2"
+let screen = "menu"
 
 let foyer = false
 let attemptLeave = false
