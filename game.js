@@ -1,6 +1,6 @@
 let myFont
 
-let screen = "menu"
+let screen = "woods1a"
 
 let foyer = false
 let attemptLeave = false
@@ -107,7 +107,7 @@ print(screen)
 	if (screen == "intro") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("You pull up in front of your\ndestination: an ancient manor with\nshuttered windows.\
+		typeWriter("You pull up in front of your\ndestination: an ancient ruined manor\nwith shuttered windows.\
 		\n\nThe sign on the entrance says: \n\n     BEWARE OF GHOSTS!\
 		\n\nBut you're a ghost hunter, so you\ndon't care that much; you've eaten\nsigns like this for breakfast.\
 		\n\n  You get out of your CAR, and close\n  the door.  \
@@ -171,7 +171,7 @@ print(screen)
 		\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
-	if (screen == "road1c") {  ////finish formatting!!!!!
+	if (screen == "road1c") {
 		
 		textAlign(LEFT, TOP)
 		typeWriter("You suddenly find yourself coasting\nto a stop in front of the manor.\
@@ -186,11 +186,12 @@ print(screen)
 	if (screen == "road2") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("It wouldn't hurt to try to leave\none more time, you decide, thinking\nabout how desperately you want a\ncookie and also to not be here.\
-		\n\n  You get into your car and drive\n  off, focusing really hard on\n  getting away from this stupid ghost\n  house.\
-		\n\nAfter a few minutes, you roll right\nback up to the front of the estate,\ncursing your luck furiously the whole\nway.\
-		\n\n  You get back out of your car. It\n  seems like you're trapped here\n  until you can take care of the\n  source of the haunting...\
-		\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
+		typeWriter("It wouldn't hurt to try to leave\none more time, you decide, looking\nnervously at the haunted manor.\
+		\n\n  You get into your car and drive\n  away, focusing really hard on\n  getting back to town.\
+		\n\nDoesn't work. After a few minutes,\nyou roll right back up to the front\nof the estate.\
+		\n\n  You glare at it as you get out of\n  your car. It seems like you're\n  trapped here until you can take\
+		\n  care of the source of the\n  haunting...\
+		\n\n\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 
@@ -200,19 +201,19 @@ print(screen)
 	if (screen == "car1") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("You look through the backseat of your\ncar, hoping to find some kind of tool\
-		\nsomehow, or even just a flashlight.\
-		\n\nNo luck though. You're stuck with\njust your wits.\
-		\n\nYou make a note on your phone to\nreassess your ghost-busting toolkit\nphilosophy as soon as you get out of this and turn back to the manor\
+		typeWriter("You look through your car, hoping\
+		\nto find some kind of ghost-blasting\ntool or even just a flashlight hidden\nunder the Shockingly Large quantity\nof old receipts.\
+		\n\n  No luck though. You're stuck with\n  just your wits.\
+		\n\nYou make a mental note to reassess\nyour philosophy on ghost-busting\nequipment as soon as you get out of\nthis and turn back to the manor\
 		\nhouse...\
-		\n\n\n\n\n\n\n\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
+		\n\n\n\n\n\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
 	}
 
 	if (screen == "car2") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("You search through your car again,\nthoroughly, opening up the trunk and\
-		\nlooking under all the seats.\n\nNothing useful, but you do find an open sleeve of cookies on the floor.\
+		typeWriter("You search through your car again,\nthoroughly, opening up the trunk and\nlooking under all the seats.\
+		\n\n  Still nothing useful, but you do\n  find an old mozzerella stick.\
 		\n\nYou munch on it a little as you turn\nback toward the house...\
 		\n\n\n\n\n\n\n\n\n\n\n\n\n Press ENTER to conintue.....", 100, 80, 620, 460)
 	}
@@ -220,17 +221,27 @@ print(screen)
 	if (screen == "car3") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("still nothin.  press enter to continue", 100, 80, 620, 460)
+		typeWriter("You look once more through your car.\n\n  Still nothing. Not even a snack.\
+		\nIt looks like you are well and truly on your own...\
+		\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Press enter to continue.....", 100, 80, 620, 460)
 	}
 
 
 
-	if (screen == "woods1") {  //format
+
+	if (screen == "woods1a") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("The woods are dense, and you spend several minutes trying to find a path through the trees.\
-		\nYou start seeing gentle lights floating just out of the corner of your eye...\
-		\n\nYou think you hear music.... \
+		typeWriter("There are a LOT of trees here. The\nestate maybe used to have a cool,\nfancy garden, but now it's completely\nsurrounded by spooky forest.\
+		\n\n  It all seems pretty uniform from\n  here...  You don't see anything\n  that might lead you to anything\n  useful or cool...\
+		\n\nOh well! Nothing for it. You pick a\nrandom direction and trudge off into\nthe trees.\
+		\n\n\n\n\n\n\n\n\n Press ENTER to continue.....", 100, 80, 620, 460)
+	}
+
+	if (screen == "woods1b") {  //format
+
+		textAlign(LEFT, TOP)
+		typeWriter("You think you hear music.... \
 		\n\nYou feel a strange compulsion to explore deeper...\
 		\n\nYou suddenly become afraid of getting lost and return quickly to the small clearing in front of the manor.\
 		\n\nNot that the manor feels any safer...\nYou glance back at the woods and consider trying again.\
@@ -238,7 +249,7 @@ print(screen)
 		\n\nPress ENTER to continue.....", 100, 80, 620, 460)
 	}
 
-	if (screen == "woods2") { //format
+	if (screen == "woods2") {  //format
 
 		textAlign(LEFT, TOP)
 		typeWriter("Once again, the deeper into the woods you get, the louder the almost-music swells.\
@@ -274,10 +285,10 @@ print(screen)
 		\n\nYou are in a dimly lit FOYER, once well-furnished, now fallen into disrepair.\
 		\n\nThere is a STAIRCASE leading up to a darkened second floor.\
 		\nThere is a door to the NORTH.\
-		\nThere is also the door behind you, leading OUTSIDE.", 100, 80, 620, 460)//there is a door to the west and also one to the north
+		\nThere is also the door behind you, leading OUTSIDE.", 100, 80, 620, 460) //there is a door to the west and also one to the north
 	}
 
-	if (screen == "foyer") {  ///add in the west room, encounter w a ghost?  kiss???  Information...??
+	if (screen == "foyer") {  //add in the west room, encounter w a ghost?  kiss???  Information...??
 
 		textAlign(LEFT, TOP)
 		typeWriter("You are in a dimly lit FOYER.\
@@ -293,7 +304,7 @@ print(screen)
 	if (screen == "staircase1") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("You go up the stairs. At the top is an unfurnished room painted over bone white, \
+		typeWriter("You go up the stairs. At the top is an unfurnished room painted over bone-white, \
 		\nexcept for a big arcane CIRCLE scrawled in stark black on the far wall.\
 		\n\nThis must be the hell portal! You did it!\
 		\n\nCongratulating yourself, you walk over to the circle and try to smudge it out with your shoe.\
@@ -341,7 +352,7 @@ print(screen)
 
 
 
-	if (screen == "finale") { //finish finale
+	if (screen == "finale") {  //finish finale
 
 		textAlign(LEFT, TOP)
 		typeWriter("You turn to face the source of the light, wiping thick blood out of your eyes.\
@@ -356,11 +367,12 @@ print(screen)
 
 
 
-	if (screen == "gallery") { //add in the option to go back to the foyer.  //also maybe add in the table???
+	if (screen == "gallery") {  //maybe add in the table???
 
 		textAlign(LEFT, TOP)
 		typeWriter("You are in a long rectangular room.\
 		\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
+		\n\nBehind you is the door leading back to the FOYER.\
 		\n\nThe west wall is taken up by a large MURAL depicting a monster rising from a pit of fire.\
 		Its many eyes seem to flicker. Must be a trick of the light....", 100, 80, 620, 480)
 	}
@@ -369,20 +381,22 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 		typeWriter("You are in a long rectangular room.\
-			\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
-			\nOne of these rests on the floor. In its place on the wall is a hollow containing an iron LEVER.\
-			\n\nThe west wall is taken up by a large MURAL depicting a monster rising from a pit of fire.\
-			Its many eyes seem to flicker. Must be a trick of the light....", 100, 80, 620, 480)
+		\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
+		\nOne of these rests on the floor. In its place on the wall is a hollow containing an iron LEVER.\
+		\n\nBehind you is the door leading back to the FOYER.\
+		\n\nThe west wall is taken up by a large MURAL depicting a monster rising from a pit of fire.\
+		Its many eyes seem to flicker. Must be a trick of the light....", 100, 80, 620, 480)
 	}
 
 	if (screen == "gallery3") {
 
 		textAlign(LEFT, TOP)
 		typeWriter("You are in a long rectangular room.\
-			\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
-			\nOne of these rests on the floor. In its place on the wall is a hollow containing an iron LEVER.  It is pulled.\
-			\n\nThe mural that used to fill the west wall is gone, revealing a rough-hewn PASSAGE, leading into a dark room.\
-			", 100, 80, 620, 480)
+		\n\nAged PORTRAITS of dismal-looking aristocrats line the walls, and you get the unsettling impression that they are watching you.\
+		\nOne of these rests on the floor. In its place on the wall is a hollow containing an iron LEVER.  It is pulled.\
+		\n\nBehind you is the door leading back to the FOYER.\
+		\n\nThe mural that used to fill the west wall is gone, revealing a rough-hewn PASSAGE, leading into a dark room.\
+		", 100, 80, 620, 480)
 	}
 
 
@@ -415,17 +429,17 @@ print(screen)
 
 		textAlign(LEFT, TOP)
 		typeWriter("The creature depicted in the mural has too many eyes and too many teeth,\
-			and looking at it for too long makes your stomach curdle.\
-			\n\nYou notice that the edges of the mural look strange, almost disconnected...\
-			\n\nCould this wall.... move?\
-			\n\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 480)
+		and looking at it for too long makes your stomach curdle.\
+		\n\nYou notice that the edges of the mural look strange, almost disconnected...\
+		\n\nCould this wall.... move?\
+		\n\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 480)
 	}
 
 	if (screen == "mural2") {
 
 		textAlign(LEFT, TOP)
 		typeWriter("The mural that used to fill the west wall is gone, revealing a rough-hewn PASSAGE, leading into a dark room.\
-			\n\n\n\n\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 480)
+		\n\n\n\n\n\n\n\nPress ENTER to continue.....", 100, 80, 620, 480)
 		
 	}
 
@@ -443,7 +457,10 @@ print(screen)
 	if (screen == "lever2") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("lever is already pulled", 100, 80, 620, 480)
+		typeWriter("You look at the lever again.  You've already activated the mechanism, but you flip it back anyway.\
+		Nothing happens. You feel the portraits giving you Looks, and you step away, glaring back at them.\
+		Press ENTER to continue.....\
+		", 100, 80, 620, 480)
 	}
 
 
@@ -475,7 +492,12 @@ print(screen)
 	if (screen == "passage11") {
 
 		textAlign(LEFT, TOP)
-		typeWriter("you go back into the spooky room, press enter to continue", 100, 80, 620, 480)
+		typeWriter("Being in this room gives you the heebie-jeebies.\
+		The SKULL on the altar of bones is still lit with simmering white fire.\
+		You rub the wound on your hand as you look at the dark stain on its forehead.\
+		The air crackles with baleful energy. Seems like your blood activated something evil.  Again.\
+		You head back into the GALLERY...\
+		Press ENTER to continue......", 100, 80, 620, 480)
 	}
 
 
@@ -553,7 +575,7 @@ function keyPressed() {
 
 			} else if (usertext == "WOODS" || usertext == "woods" || usertext == "Woods") {
 				if (woods == 0) {
-					screen = "woods1"
+					screen = "woods1a"
 					woods = 1
 					i = 0
 				} else if (woods == 1) {
@@ -575,7 +597,7 @@ function keyPressed() {
 					screen = "car2"
 					carlook = 2
 					i = 0
-				} else if (woods == 2) {
+				} else if (carlook == 2) {
 					screen = "car3"
 					i = 0
 				}
@@ -583,9 +605,12 @@ function keyPressed() {
 
 
 
+		} else if (screen == "woods1a") {
+			screen = "woods1b"
+			i = 0
+		
 
-
-		} else if (screen == "woods1" || screen == "woods2" || screen == "road1c" || screen == "road2" || screen == "car1" || screen == "car2"){
+		} else if (screen == "woods1b" || screen == "woods2" || screen == "road1c" || screen == "road2" || screen == "car1" || screen == "car2" || screen == "car3"){
 			screen = "outside"
 			i = 0
 
@@ -619,8 +644,21 @@ function keyPressed() {
 				i = 0
 
 			} else if (usertext == "NORTH" || usertext == "north" || usertext == "North") {
-				screen = "gallery"
-				i = 0
+				
+				if (portrait == true) {
+					
+					if (passage == false) {
+						screen = "gallery2"
+						i = 0
+					} else if (passage == true) {
+						screen = "gallery3"
+						i = 0
+					}
+
+				} else if (portrait == false) {
+					screen = "gallery"
+					i = 0
+				}
 			
 			// } else if (usertext == "WEST" || usertext == "west" || usertext == "West") {
 			// 	screen = "parlor"
@@ -633,7 +671,7 @@ function keyPressed() {
 					i = 0
 
 				} else if (idol == true) {
-					screen = "staircase2"
+					screen = "staircase2a"
 					i = 0
 				}
 
@@ -680,11 +718,11 @@ function keyPressed() {
 				}
 			} else if (usertext == "PASSAGE" || usertext == "passage" || usertext == "Passage") {
 
-				if (passage = true) {
-					if (idol = false) {
+				if (passage == true) {
+					if (idol == false) {
 						screen = "passage1"
 						i = 0
-					} else if (idol = true) {
+					} else if (idol == true) {
 						screen = "passage11"
 						i = 0
 					}
@@ -744,7 +782,7 @@ function keyPressed() {
 
 
 
-		} else if (screen == "staircase2") {
+		} else if (screen == "staircase2a") {
 
 			if (staircase < 2) {
 				screen = "staircase2"
@@ -796,7 +834,6 @@ function typeWriter(words, x, y, x2, y2) {
 	wordsy = y
 	wordsx2 = x2
 	wordsy2 = y2
-	
 }		
 
 function typing() {
@@ -811,7 +848,6 @@ function typing() {
 function mouseClicked() {
 		print(int(mouseX), int((mouseY)));
 	}
-
 
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight)
