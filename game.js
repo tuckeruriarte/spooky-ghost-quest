@@ -1,6 +1,6 @@
 let myFont
 
-let screen = "woods1a"
+let screen = "menu"
 
 let foyer = false
 let attemptLeave = false
